@@ -26,8 +26,8 @@ Backend API สำหรับ Candidate Assignment (Back-end Developer) พั�
 
 ### 1️⃣ Clone repository
 ```bash
-git clone <repo-url>
-cd agnos-backend
+git clone https://github.com/Tee-So-Cool/HIS-TEST.git
+cd HIS-TEST
 ```
 
 ### 2️⃣ Install dependencies
@@ -123,45 +123,3 @@ POST /records
 ```http
 GET /records?userId=1
 ```
-
----
-
-## ✅ Validation Rules
-
-- Email ต้องไม่ซ้ำ (unique)
-- amount ต้องเป็น number
-- userId ต้องมีอยู่จริง
-
----
-
-## 🧪 Testing (Postman)
-
-- ใช้ Postman ส่ง request
-- ตรวจสอบ Response Status (200 / 201)
-
----
-
-## 🛑 Stop PostgreSQL (Windows)
-
-```bash
-net stop postgresql-x64-15
-```
-
----
-
-## 📌 Notes
-
-- ใช้ `ValidationPipe` (whitelist, transform)
-- Prisma Service ถูก inject ผ่าน Module อย่างถูกต้อง
-- รองรับ query params (`userId`)
-
----
-
-## 👨‍💻 Author
-
-Candidate Assignment – Back-end Developer
-
----
-
-✅ **Project พร้อมใช้งานและผ่าน requirement พื้นฐานทั้งหมด**
-
